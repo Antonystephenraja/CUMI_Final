@@ -1,0 +1,231 @@
+@keyframes blink-text-red-500 {
+  50% {
+    color: transparent;
+  }
+}
+
+.animate-blink-text-red-500 {
+  animation: blink-text-red-500 1s infinite;
+}
+
+
+/*sidebar height*/
+@media (max-width: 2560px) {
+    .height {
+        height: 100%;
+    }
+}
+@media (min-width: 1500px) {
+  .height {
+      height: 100%;
+  }
+}
+@media (min-height: 667px) {
+  .height {
+      height: 395vh;
+  }
+  .table_h{
+    height: 40vh;
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: 1604px) {
+  .model {
+      height: 400px;
+  }
+}
+
+
+/* battery blink notification */
+.blink-border {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    border-color: transparent;
+    
+  }
+  50% {
+    border-color: red;
+  
+
+  }
+  100% {
+    border-color: transparent;
+   
+  }
+}
+
+
+
+
+.animated-blink {
+  animation: blink 1s infinite;
+}
+
+
+
+
+.chart_page{
+  height: 100vh;
+}
+
+
+.chart-height{
+  width: 520px;
+  height: 200px;
+  margin-left: 20px;
+}
+
+
+
+
+@media (min-width: 1604px) {
+  .report_img{
+    width: 200px;
+
+  }
+  .height{
+    height: 100vh;
+  }
+  .card_size {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Make sure the container takes up the full height */
+  }
+  
+  .main_height {
+      height: 92vh;
+  }
+  .thickness_width{
+    width: 100px;
+    margin-top: 10px;
+  }
+  .table_h{
+    height: 45vh;
+    margin-top: 1px;
+  }
+  .chart-height{
+    height: 250px;
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 90vh;
+  
+  }
+
+  .card{
+    margin-top: 20px;
+    height: 17vh;
+  }
+
+}
+
+.dropdown{
+  margin:-29px -204px 0px 156px;
+}
+
+.red-bg {
+  background-color: red;
+}
+.orange-bg {
+  background-color: #ED7014;
+}
+.green-bg {
+  background-color: #1AC48B;
+}
+/*chart css*/
+
+/*-------------- Hover Sensor------------ */
+.hovers:hover {
+  cursor: pointer;
+}
+
+
+
+.popup .overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  z-index: 1;
+}
+
+.popup .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  width: 350px;
+  height: 120px;
+  z-index:2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 22px;
+}
+
+
+.popup .close-btn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+} 
+
+
+/* Devicename Edit popup */
+.Devicename_popup .Devicename_overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.952);
+  z-index: 1;
+}
+
+.Devicename_popup .Devicename_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  width: 350px;
+  height: 220px;
+  z-index:2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+.Devicename_popup .Devicename_close-btn{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+} 
