@@ -158,7 +158,7 @@ const handleSubmit = async(event)=>{
     }
   }
   else{
-    const response_data = await fetch("http://localhost:4000/backend/Update_Info",{
+    const response_data = await fetch("http://34.100.168.176:4000/backend/Update_Info",{
       method:'POST',
       headers:{
         'Content-Type':'application/json',

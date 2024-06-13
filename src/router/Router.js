@@ -29,7 +29,7 @@ const[Thicknessvalue,setThicknessData]=useState([]);
 
 const devicename = async()=>{
   try{
-    const response = await axios.get('http://localhost:4000/backend/getDevicename');
+    const response = await axios.get('http://34.100.168.176:4000/backend/getDevicename');
     setDeviceNames(response.data.devices);
   }catch(error){
     console.error("Error fetching data:",error);
@@ -39,7 +39,7 @@ const devicename = async()=>{
 const corresponding_device_data = async()=>{
   try{
     let devicename_id = localStorage.getItem("DeviceId")
-    const response = await axios.get('http://localhost:4000/backend/devicelast30data',{
+    const response = await axios.get('http://34.100.168.176:4000/backend/devicelast30data',{
       params:{
         device_id :devicename_id
       }

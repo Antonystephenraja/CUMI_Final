@@ -36,7 +36,7 @@ const Reports = (Devicenames) => {
       const startDate = new Date(selectedFromDate);
       const endDate = new Date(selectedToDate);
 
-      const response = await axios.post('http://localhost:4000/backend/getData', {
+      const response = await axios.post('http://34.100.168.176:4000/backend/getData', {
         device: deviceId,
         startdate: startDate,
         enddate: endDate
