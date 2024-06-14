@@ -15,9 +15,6 @@ const Mainpage = ({Devicenames,device_data}) => {
   const device_id = alldata ? alldata.device_name : "N/A";
   const device_lastime = alldata ? alldata.timestamp : 'N/A';
 
-
-  
-
   const device_time_var = Devicenames.find(device =>device.Device_ID === device_id)
   const user_set_time = device_time_var ?device_time_var.Sleep_time :'N/A';
   const id =device_time_var?device_time_var.Device_Name :'N/A';
@@ -40,14 +37,11 @@ const Mainpage = ({Devicenames,device_data}) => {
   let device_name_time = []
   let deviceErr=[]
   const deviceinfos =localStorage.getItem(id)
-
   const parsedInfo = JSON.parse(deviceinfos);
   let device_ids = parsedInfo ?parsedInfo.device_names :"N/A";
   let device_time = parsedInfo?parsedInfo.time :"N/A";
   let device_Err = parsedInfo?parsedInfo.Err :"N/A";
-
   const device_ids_length = device_ids.split(',').length;
-  
   device_names_data.push(device_ids)
   device_name_time.push(device_time)
   deviceErr.push(device_Err);
@@ -55,7 +49,9 @@ const Mainpage = ({Devicenames,device_data}) => {
   const devicetimings =device_name_time[0]?device_name_time[0].split(',').map(name=>name.trim()):[];
   const device_Error = deviceErr[0] ? deviceErr[0].split(',').map(name => name.trim()):[]; 
  
-
+  const devicenames =localStorage.getItem("DeviceId");
+  const device1 = Devicenames.find(item => item.Device_ID === devicenames)
+ const deviceIds = device1 ?device1.Device_Name : 'N/A';
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
     
@@ -84,7 +80,7 @@ const Mainpage = ({Devicenames,device_data}) => {
         <div className='shadow-xl sm:w-[98%] flex bg-white mt-4 ml-2 rounded-lg'>
           <div className='sm:flex justify-center '>
             <div>
-              <p className="font-bold mt-0.5 ml-2 text-black text-sm">ID:{device_id}</p>
+              <p className="font-bold mt-0.5 ml-2 text-black text-sm">ID:{deviceIds}</p>
             </div>
             <div className='flex ml-2'>
               {!isWorking ?(
@@ -133,6 +129,7 @@ const Mainpage = ({Devicenames,device_data}) => {
           <div className='w-full sm:w-[50%] overflow-x-auto '>
           <RTables 
             device_data ={device_data}
+            devicename={deviceIds}
             />
           </div> 
         </div>

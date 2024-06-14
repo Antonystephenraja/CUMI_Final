@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.654ada6c.css",
-    "main.js": "/static/js/main.de863123.js",
+    "main.css": "/static/css/main.4a2e157b.css",
+    "main.js": "/static/js/main.8da7b5d0.js",
     "static/js/498.47873ef4.chunk.js": "/static/js/498.47873ef4.chunk.js",
     "static/js/703.5679b06a.chunk.js": "/static/js/703.5679b06a.chunk.js",
-    "static/js/513.256a4ad7.chunk.js": "/static/js/513.256a4ad7.chunk.js",
+    "static/js/513.ece167b8.chunk.js": "/static/js/513.ece167b8.chunk.js",
     "static/js/787.4a3a7f51.chunk.js": "/static/js/787.4a3a7f51.chunk.js",
     "static/media/products.png": "/static/media/products.bf46eecb31acbf4ae132.png",
-    "static/media/cumi_login.png": "/static/media/cumi_login.a5640c5b35eec392711d.png",
+    "static/media/login-bg.jpg": "/static/media/login-bg.9c53e5baeab286b098a8.jpg",
     "static/media/pdfcover.jpg": "/static/media/pdfcover.0c45c403b7a31641841c.jpg",
     "static/media/xyma_blue.png": "/static/media/xyma_blue.c614030b2cd257f55f9a.png",
     "static/media/xyma.png": "/static/media/xyma.4e2ffa7fd8e87d8d9843.png",
@@ -15,15 +15,15 @@
     "static/media/CUMI0908.png": "/static/media/CUMI0908.6b0bc7ff14acd953b1d3.png",
     "static/media/cumi_final.png": "/static/media/cumi_final.7d3c5785856d5cd8b814.png",
     "index.html": "/index.html",
-    "main.654ada6c.css.map": "/static/css/main.654ada6c.css.map",
-    "main.de863123.js.map": "/static/js/main.de863123.js.map",
+    "main.4a2e157b.css.map": "/static/css/main.4a2e157b.css.map",
+    "main.8da7b5d0.js.map": "/static/js/main.8da7b5d0.js.map",
     "498.47873ef4.chunk.js.map": "/static/js/498.47873ef4.chunk.js.map",
     "703.5679b06a.chunk.js.map": "/static/js/703.5679b06a.chunk.js.map",
-    "513.256a4ad7.chunk.js.map": "/static/js/513.256a4ad7.chunk.js.map",
+    "513.ece167b8.chunk.js.map": "/static/js/513.ece167b8.chunk.js.map",
     "787.4a3a7f51.chunk.js.map": "/static/js/787.4a3a7f51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.654ada6c.css",
-    "static/js/main.de863123.js"
+    "static/css/main.4a2e157b.css",
+    "static/js/main.8da7b5d0.js"
   ]
 }

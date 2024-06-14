@@ -55,7 +55,7 @@ const time = Thickness_times?Thickness_times :"N/A";
       y: {
         title:{
           display:true,
-          text:"Thickness",
+          text:"Thickness(mm)",
           color:"#00FFFF "
         },
         ticks: {

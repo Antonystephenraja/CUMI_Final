@@ -84,6 +84,39 @@ const data = {
   ]
 };
 
+const options={
+  scales: {
+    x: {
+        title: {
+          display: true,
+          text: 'TimeStamp', 
+          color: '#F7FF00 ' 
+      },
+        ticks: {
+            color: '#D8D8D8 '
+        },
+        grid: {
+          color: '#C5E3E2', 
+          borderColor: '#C5E3E2' 
+      }
+    },
+    y: {
+      title:{
+        display:true,
+        text:"Thickness(mm)",
+        color:"#00FFFF "
+      },
+      ticks: {
+          color: '#11FFB3' 
+      },
+      grid: {
+        color: '#C5E3E2', 
+        borderColor: '#C5E3E2' 
+    }
+  }
+}
+}
+
   // const data={
   //   labels:time,
   //   datasets:[
@@ -109,10 +142,10 @@ const data = {
         <div className="flex justify-center items-center">
           <div className="flex">
           <h3 className="font-bold mt-2 text-white">Select the DeviceId:</h3>
-            <Select  className="w-22 ml-2 mt-1 h-10" options={Data_freequences} styles={customStyles_2} isSearchable={true}  placeholder={`${devicename[0]}`} onChange={handle_dropdown_Change} />
+            <Select  className="w-22 ml-2 mt-1 h-10" options={Data_freequences} styles={customStyles_2}  isSearchable={true}  placeholder={`${devicename[0]}`} onChange={handle_dropdown_Change} />
           </div>
         </div>
-        <Line data={data} />
+        <Line data={data} options={options}/>
       </div>
     </div>
   );

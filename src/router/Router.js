@@ -69,7 +69,7 @@ const corresponding_device_data = async()=>{
                   />}/>
                   {/* <Route path='upgrade' element={<Upgradeplan/>}/> */}
                   <Route path='report' element={<Reports
-                  Devicenames ={devicenames}
+                    Devicenames ={devicenames}
                   />}/>
                   <Route path ='User&Password:stephen' element={<AdminPage
                     chartdata={Thicknessvalue}

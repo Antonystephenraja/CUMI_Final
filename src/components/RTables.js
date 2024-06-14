@@ -3,10 +3,10 @@ import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
 import './style.css';
 import { Transition } from '@headlessui/react';
 
-const RTables = (device_data) => {
-  const alldata = device_data.device_data;
- 
-
+const RTables = ({device_data,devicename}) => {
+  const alldata = device_data;
+  let devicename_id = localStorage.getItem("DeviceId")
+ console.log(device_data);
   return (
     <div className="flex flex-col rounded-md">
       <div className="h-[41vh] md:h-[42vh] overflow-y-auto" style={{scrollbarWidth:"none"}}>
@@ -17,16 +17,16 @@ const RTables = (device_data) => {
               DeviceId
             </th>
             <th className="text-sm sm:font-medium text-white">
-              Thickness
+              Thickness(mm)
             </th>
             <th className="text-sm sm:font-medium text-white">
-              Battery
+              Battery(%)
             </th>
             <th className="text-sm sm:font-medium text-white">
-              Signal
+              Signal(%)
             </th>
             <th className="text-sm sm:font-medium text-white">
-              Device Temp
+              Device Temp(℃)
             </th>
             <th className="text-sm sm:font-medium text-white">
               Timestamp
@@ -41,14 +41,13 @@ const RTables = (device_data) => {
                   const signal_percentage_convert = parseInt(signal_percentage)
                   return (
                     <tr key={index}>
-                      <td className="sm:px-2 whitespace-no-wrap text-center text-sm text-gray-300">{data.device_name}</td>
+                      <td className="sm:px-2 whitespace-no-wrap text-center text-sm text-gray-300">{devicename}</td>
                       <td className="sm:px-2 whitespace-no-wrap text-center text-sm  text-gray-300">{data.thickness}</td>
                       <td className="sm:px-2 whitespace-no-wrap text-center text-sm text-gray-300">
-                        {batteryPercentage < 0 ? "0 %" : batteryPercentage > 100 ? "100%" : batteryPercentage + "%"}
+                        {batteryPercentage < 0 ? "0 %" : batteryPercentage > 100 ? "100%" : batteryPercentage}
                       </td>
-
-                      <td className="sm:px-2 whitespace-no-wrap text-center text-sm text-gray-300">{signal_percentage_convert +"%"}</td>
-                      <td className="sm:px-2 whitespace-no-wrap text-center text-sm text-gray-300">{data.device_status +"℃"}</td>
+                      <td className="sm:px-2 whitespace-no-wrap text-center text-sm text-gray-300">{signal_percentage_convert}</td>
+                      <td className="sm:px-2 whitespace-no-wrap text-center text-sm text-gray-300">{data.device_status}</td>
                       <td className="sm:px-2 whitespace-no-wrap text-center text-sm text-gray-300">{data.timestamp}</td>
                     </tr>
                   );
